@@ -27,3 +27,6 @@ jobs:
 
       - run: aws sts get-caller-identity
         shell: bash
+
+      - run: aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-east-1:159316622854:secret:flag_sts_lab_2-aBt6w3
+        shell: bash
